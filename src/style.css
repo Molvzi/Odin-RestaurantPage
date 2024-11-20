@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #555;
+}
+
+nav button.active {
+    background-color: #666;
+    border-radius: 4px;
+}
+
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.description {
+    color: #666;
+    margin: 2rem 0;
+}
+
+/* Menu Styles */
+.menu-section {
+    text-align: left;
+}
+
+.menu-category {
+    margin: 2rem 0;
+}
+
+.menu-item {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.item-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.price {
+    color: #666;
+    font-weight: bold;
+}
+
+/* About Styles */
+.about-section {
+    text-align: left;
+}
+
+.story, .chef, .contact {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.contact p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #content {
+        padding: 1rem;
+    }
+    
+    .item-header {
+        flex-direction: column;
+    }
+    
+    .price {
+        margin-top: 0.5rem;
+    }
+}
